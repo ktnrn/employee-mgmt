@@ -1,0 +1,22 @@
+<!-- modal -->
+<div id="myModal" class="modal">
+    <!-- content -->
+    <div class="modal-content">
+        <div>
+            <span class="close" ng-click="$ctrl.onClose()">&times;</span>
+        </div>
+        <br>
+        <div class="table width100pct" ng-if="$ctrl.employee">
+            <div>Employee Details: {{$ctrl.employee.Name}}</div>
+            <br/>
+            <div class="row" ng-repeat="prop in $ctrl.employee">
+                <div class="cell">
+                    <strong>{{prop}}</strong>
+                </div>
+                <div class="cell">
+                    <span>{{$ctrl.employee[prop]}}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

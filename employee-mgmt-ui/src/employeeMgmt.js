@@ -1,0 +1,1 @@
+var employeeMgmt = angular.module("employeeMgmt", ['ui.grid']);
